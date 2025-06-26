@@ -63,11 +63,14 @@
             replacements = { inherit bash wordpress-source; };
             src = ./src/update-wordpress.sh;
           };
+        updaters = lib.attrsets.mapAttrs' (name: wordpress-source:
+          lib.attrsets.nameValuePair ("update-" + name)
+          (gen-update-wordpress wordpress-source)) versions;
       in {
         devShells.default = mkShell { buildInputs = [ omnix ]; };
         packages = versions // {
           default = latest;
-        } // {
+        } // updaters // {
           update-wordpress = gen-update-wordpress latest;
         };
       });
