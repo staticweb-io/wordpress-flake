@@ -12,6 +12,18 @@
       with pkgs;
       let
         version_data = {
+          wordpress_6_4_5 = {
+            version = "6.4.5";
+            sha256 = "sha256-T4fp7uYoc/eo+pCfzSmIY0AbyR2LcDLl6iJHY6kxxso=";
+          };
+          wordpress_6_5_5 = {
+            version = "6.5.5";
+            sha256 = "sha256-bIRmTqmzIRo1KdhAcJa1GxhVcTEiEaLFPzlNFbzfLcQ=";
+          };
+          wordpress_6_6_2 = {
+            version = "6.6.2";
+            sha256 = "sha256-JpemjLPc9IP0/OiASSVpjHRmQBs2n8Mt4nB6WcTCB9Y=";
+          };
           wordpress_6_7_0 = {
             version = "6.7";
             sha256 = "sha256-UDcayx3Leen0HHPcORZ+5cmvfod4BLOWB1HKd6j5rqM=";
