@@ -54,7 +54,7 @@ if [ -z "$WPDIR" ]; then
   WPDIR="$(pwd)"
 fi
 
-cd "$WPDIR"
+cd "$WPDIR" || exit 1
 
 if [ ! -f "wp-config.php" ] && [ ! -f "wp-config-sample.php" ]; then
   echo "Error: '$WPDIR' does not contain a WordPress installation." >&2
