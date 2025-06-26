@@ -54,23 +54,21 @@
             };
           }))) version_data;
         latest = versions.wordpress_6_8_1;
-        update-wordpress = replaceVarsWith {
-          dir = "bin";
-          isExecutable = true;
-          meta.mainProgram = "update-wordpress";
-          name = "update-wordpress";
-          replacements = {
-            inherit bash;
-            wordpress-source = latest;
+        gen-update-wordpress = wordpress-source:
+          replaceVarsWith {
+            dir = "bin";
+            isExecutable = true;
+            meta.mainProgram = "update-wordpress";
+            name = "update-wordpress";
+            replacements = { inherit bash wordpress-source; };
+            src = ./src/update-wordpress.sh;
           };
-          src = ./src/update-wordpress.sh;
-        };
       in {
         devShells.default = mkShell { buildInputs = [ omnix ]; };
         packages = versions // {
           default = latest;
         } // {
-          inherit update-wordpress;
+          update-wordpress = gen-update-wordpress latest;
         };
       });
 }
