@@ -61,8 +61,7 @@ if [ ! -f "wp-config.php" ] && [ ! -f "wp-config-sample.php" ]; then
   exit 1
 fi
 
-echo "Using SRCDIR: $SRCDIR"
-echo "Using WPDIR: $WPDIR"
+echo "Updating WordPress installation in $WPDIR using source from $SRCDIR"
 
 TMPDIR=$(mktemp -d)
 
