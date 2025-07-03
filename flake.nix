@@ -46,13 +46,11 @@
           };
         };
         versions = lib.attrsets.mapAttrs (name: data:
-          (wordpress.overrideAttrs (oldAttrs: rec {
+          (import ./src/wordpress.nix {
+            inherit (pkgs) lib stdenv fetchurl;
             version = data.version;
-            src = fetchurl {
-              url = "https://wordpress.org/wordpress-${version}.tar.gz";
-              sha256 = data.sha256;
-            };
-          }))) version_data;
+            hash = data.sha256;
+          })) version_data;
         latest = versions.wordpress_6_8_1;
         gen-update-wordpress = wordpress-source:
           replaceVarsWith {
