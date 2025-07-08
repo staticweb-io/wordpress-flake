@@ -58,7 +58,10 @@
             isExecutable = true;
             meta.mainProgram = "update-wordpress";
             name = "update-wordpress";
-            replacements = { inherit bash wordpress-source; };
+            replacements = {
+              inherit bash wordpress-source;
+              path = lib.makeBinPath [ coreutils util-linux ];
+            };
             src = ./src/update-wordpress.sh;
           };
         updaters = lib.attrsets.mapAttrs' (name: wordpress-source:

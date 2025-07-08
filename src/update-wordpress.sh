@@ -1,5 +1,7 @@
 #! @bash@/bin/bash
 
+export PATH=/empty:@path@
+
 usage() {
   cat <<EOF
 Usage: $0 [OPTIONS] [WPDIR]
