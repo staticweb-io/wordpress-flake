@@ -55,6 +55,11 @@
       inherit type;
 
       lib = {
+        mkInline = inline: {
+          _phpType = "raw";
+          _wpConfigInline = true;
+          value = inline;
+        };
         mkMixedArray = list: set: {
           _phpType = "mixed_array";
           value = { inherit list set; };
@@ -82,9 +87,12 @@
                */
             '';
 
-            defines = lib.concatStringsSep "\n" (lib.mapAttrsToList
-              (key: val: "define(${toPHP key}, ${toPHP val});") attrs);
           in phpHeader + "\n" + defines + "\n";
+            defines = lib.concatStringsSep "\n" (lib.mapAttrsToList (key: val:
+              if val ? _wpConfigInline then
+                toPHP (lib.removeAttrs val [ "_wpConfigInline" ])
+              else
+                "define(${toPHP key}, ${toPHP val});") attrs);
         };
 
     };
