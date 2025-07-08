@@ -87,6 +87,7 @@
                */
             '';
             phpFooter = ''
+              /** Sets up WordPress vars and included files. */
               require_once ABSPATH . 'wp-settings.php';
             '';
 
@@ -95,7 +96,7 @@
                 toPHP (lib.removeAttrs val [ "_wpConfigInline" ])
               else
                 "define(${toPHP key}, ${toPHP val});") attrs);
-          in phpHeader + "\n" + defines + "\n" + phpFooter + "\n";
+          in phpHeader + "\n" + defines + "\n\n" + phpFooter + "\n";
         };
 
     };
