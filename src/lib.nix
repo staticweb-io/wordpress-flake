@@ -1,8 +1,8 @@
 let
-  WPConfigFormat = ./formats/wp-config;
+  WPConfigFormat = import ./formats/wp-config;
   defaultWPConfigSettings = { pkgs, lib }:
     let
-      settingsFormat = (import WPConfigFormat { inherit pkgs lib; }).format { };
+      settingsFormat = (WPConfigFormat { inherit pkgs lib; }).format { };
     in {
       "$table_prefix" = settingsFormat.lib.mkInline ''
         /**
@@ -34,6 +34,6 @@ in {
   mkWPConfig = { pkgs, lib, name, settings }:
     let
       defaultSettings = defaultWPConfigSettings { inherit pkgs lib; };
-      settingsFormat = (import WPConfigFormat { inherit pkgs lib; }).format { };
+      settingsFormat = (WPConfigFormat { inherit pkgs lib; }).format { };
     in settingsFormat.generate name (defaultSettings // settings);
 }
