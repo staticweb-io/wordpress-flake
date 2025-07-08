@@ -66,6 +66,7 @@
           (gen-update-wordpress wordpress-source)) versions;
       in {
         devShells.default = mkShell { buildInputs = [ omnix ]; };
+        lib = import ./src/lib.nix;
         packages = versions // {
           default = latest;
         } // updaters // {
