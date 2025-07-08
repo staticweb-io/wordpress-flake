@@ -86,13 +86,16 @@
                * @package WordPress
                */
             '';
+            phpFooter = ''
+              require_once ABSPATH . 'wp-settings.php';
+            '';
 
-          in phpHeader + "\n" + defines + "\n";
             defines = lib.concatStringsSep "\n" (lib.mapAttrsToList (key: val:
               if val ? _wpConfigInline then
                 toPHP (lib.removeAttrs val [ "_wpConfigInline" ])
               else
                 "define(${toPHP key}, ${toPHP val});") attrs);
+          in phpHeader + "\n" + defines + "\n" + phpFooter + "\n";
         };
 
     };
