@@ -44,6 +44,10 @@
             version = "6.8.1";
             sha256 = "sha256-PGVNB5vELE6C/yCmlIxFYpPhBLZ2L/fJ/JSAcbMxAyg=";
           };
+          wordpress_6_8_2 = {
+            version = "6.8.2";
+            sha256 = "sha256-2Fpy45K/6GaBazwuvGpEaZByqlDMOmIPHE7S8TtkXis=";
+          };
         };
         versions = lib.attrsets.mapAttrs (name: data:
           (import ./src/wordpress.nix {
@@ -51,7 +55,7 @@
             version = data.version;
             hash = data.sha256;
           })) version_data;
-        latest = versions.wordpress_6_8_1;
+        latest = versions.wordpress_6_8_2;
         gen-update-wordpress = wordpress-source:
           replaceVarsWith {
             dir = "bin";
