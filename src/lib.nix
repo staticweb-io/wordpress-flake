@@ -1,9 +1,11 @@
 let
   WPConfigFormat = import ./formats/wp-config;
-  defaultWPConfigSettings = { pkgs, lib }:
+  defaultWPConfigSettings =
+    { pkgs, lib }:
     let
       settingsFormat = (WPConfigFormat { inherit pkgs lib; }).format { };
-    in {
+    in
+    {
       "$table_prefix" = settingsFormat.lib.mkInline ''
         /**
          * WordPress database table prefix.
@@ -29,11 +31,19 @@ let
       DB_COLLATE = "";
       WP_DEBUG = false;
     };
-in {
+in
+{
   inherit WPConfigFormat;
-  mkWPConfig = { pkgs, lib, name, settings }:
+  mkWPConfig =
+    {
+      pkgs,
+      lib,
+      name,
+      settings,
+    }:
     let
       defaultSettings = defaultWPConfigSettings { inherit pkgs lib; };
       settingsFormat = (WPConfigFormat { inherit pkgs lib; }).format { };
-    in settingsFormat.generate name (defaultSettings // settings);
+    in
+    settingsFormat.generate name (defaultSettings // settings);
 }

@@ -1,7 +1,13 @@
 # Adapted from
 # https://github.com/NixOS/nixpkgs/blob/b43c397f6c213918d6cfe6e3550abfe79b5d1c51/pkgs/servers/web-apps/wordpress/generic.nix
 
-{ lib, version, hash, stdenv, fetchurl }:
+{
+  lib,
+  version,
+  hash,
+  stdenv,
+  fetchurl,
+}:
 
 stdenv.mkDerivation rec {
   pname = "wordpress";
