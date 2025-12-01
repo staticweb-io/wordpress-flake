@@ -46,4 +46,26 @@ in
       settingsFormat = (WPConfigFormat { inherit pkgs lib; }).format { };
     in
     settingsFormat.generate name (defaultSettings // settings);
+  mkWPUpdater =
+    {
+      lib,
+      pkgs,
+      replaceVarsWith,
+      wordpress-source,
+    }:
+    replaceVarsWith {
+      dir = "bin";
+      isExecutable = true;
+      meta.mainProgram = "update-wordpress";
+      name = "update-wordpress";
+      replacements = {
+        inherit wordpress-source;
+        bash = pkgs.bash;
+        path = lib.makeBinPath [
+          pkgs.coreutils
+          pkgs.util-linux
+        ];
+      };
+      src = ../src/update-wordpress.sh;
+    };
 }

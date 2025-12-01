@@ -18,6 +18,17 @@
       with import nixpkgs { inherit system; };
       with pkgs;
       let
+        ourLib = import ./src/lib.nix;
+        mkWPUpdater =
+          wordpress-source:
+          (ourLib.mkWPUpdater {
+            inherit
+              lib
+              pkgs
+              replaceVarsWith
+              wordpress-source
+              ;
+          });
         versions = lib.attrsets.mapAttrs (
           name: data:
           (import ./src/wordpress.nix {
@@ -27,30 +38,13 @@
           })
         ) (lib.importJSON (self + "/wordpress-versions.json"));
         latest = versions.wordpress_6_8_3;
-        gen-update-wordpress =
-          wordpress-source:
-          replaceVarsWith {
-            dir = "bin";
-            isExecutable = true;
-            meta.mainProgram = "update-wordpress";
-            name = "update-wordpress";
-            replacements = {
-              inherit bash wordpress-source;
-              path = lib.makeBinPath [
-                coreutils
-                util-linux
-              ];
-            };
-            src = ./src/update-wordpress.sh;
-          };
         updaters = lib.attrsets.mapAttrs' (
-          name: wordpress-source:
-          lib.attrsets.nameValuePair ("update-" + name) (gen-update-wordpress wordpress-source)
+          name: wordpress-source: lib.attrsets.nameValuePair ("update-" + name) (mkWPUpdater wordpress-source)
         ) versions;
       in
       {
         devShells.default = mkShell { buildInputs = [ omnix ]; };
-        lib = import ./src/lib.nix;
+        lib = ourLib;
         packages =
           versions
           // {
@@ -58,7 +52,7 @@
           }
           // updaters
           // {
-            update-wordpress = gen-update-wordpress latest;
+            update-wordpress = mkWPUpdater latest;
           };
       }
     );
