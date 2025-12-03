@@ -34,7 +34,7 @@
           (import ./src/wordpress.nix {
             inherit (pkgs) lib stdenv fetchurl;
             version = data.version;
-            hash = data.sha256;
+            hash = data.hash;
           })
         ) (lib.importJSON (self + "/wordpress-versions.json"));
         latest = versions.wordpress_6_9_0;

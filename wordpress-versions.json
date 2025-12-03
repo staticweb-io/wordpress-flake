@@ -1,126 +1,126 @@
 {
     "wordpress_6_4_0": {
         "version": "6.4",
-        "sha256": "sha256-1yy+jedKjpPSRTCmgx4Zz05fXDNPmRUTJf2gMIcY8Tc="
+        "hash": "sha256-1yy+jedKjpPSRTCmgx4Zz05fXDNPmRUTJf2gMIcY8Tc="
     },
     "wordpress_6_4_1": {
         "version": "6.4.1",
-        "sha256": "sha256-NF3tvVNUYlKPvtvJZzM7djGflOUT4VUlm4AyHPFzfdw="
+        "hash": "sha256-NF3tvVNUYlKPvtvJZzM7djGflOUT4VUlm4AyHPFzfdw="
     },
     "wordpress_6_4_2": {
         "version": "6.4.2",
-        "sha256": "sha256-m4KJELf5zs3gwAQPmAhoPe2rhopZFsYN6OzAv6Wzo6c="
+        "hash": "sha256-m4KJELf5zs3gwAQPmAhoPe2rhopZFsYN6OzAv6Wzo6c="
     },
     "wordpress_6_4_3": {
         "version": "6.4.3",
-        "sha256": "sha256-PwjHHRlwhEH9q94bPq34NnQv3uhm1kOpjRAu0/ECaYY="
+        "hash": "sha256-PwjHHRlwhEH9q94bPq34NnQv3uhm1kOpjRAu0/ECaYY="
     },
     "wordpress_6_4_4": {
         "version": "6.4.4",
-        "sha256": "sha256-aLOO/XgjI3d/+1BpHDT2pGR697oceghjzOId1MjC+wQ="
+        "hash": "sha256-aLOO/XgjI3d/+1BpHDT2pGR697oceghjzOId1MjC+wQ="
     },
     "wordpress_6_4_5": {
         "version": "6.4.5",
-        "sha256": "sha256-T4fp7uYoc/eo+pCfzSmIY0AbyR2LcDLl6iJHY6kxxso="
+        "hash": "sha256-T4fp7uYoc/eo+pCfzSmIY0AbyR2LcDLl6iJHY6kxxso="
     },
     "wordpress_6_4_6": {
         "version": "6.4.6",
-        "sha256": "sha256-vUtofIev94qNAOmmG6zCGMdW7jVKhyU5J1Ki3zS/CAg="
+        "hash": "sha256-vUtofIev94qNAOmmG6zCGMdW7jVKhyU5J1Ki3zS/CAg="
     },
     "wordpress_6_4_7": {
         "version": "6.4.7",
-        "sha256": "sha256-Zs3ylcnzQbVN0QJklAbs5/FA/XDLnts/rCESpjIstBw="
+        "hash": "sha256-Zs3ylcnzQbVN0QJklAbs5/FA/XDLnts/rCESpjIstBw="
     },
     "wordpress_6_5_0": {
         "version": "6.5",
-        "sha256": "sha256-NCRWKIrhSMC6itw2y/WJUd2LSRtnVWkmVO/b2nEJK58="
+        "hash": "sha256-NCRWKIrhSMC6itw2y/WJUd2LSRtnVWkmVO/b2nEJK58="
     },
     "wordpress_6_5_2": {
         "version": "6.5.2",
-        "sha256": "sha256-APBO7hO9iuDGOP/IvB0dLAwby0PU7LPFth4IUXNQe9I="
+        "hash": "sha256-APBO7hO9iuDGOP/IvB0dLAwby0PU7LPFth4IUXNQe9I="
     },
     "wordpress_6_5_3": {
         "version": "6.5.3",
-        "sha256": "sha256-UmwP+d71MR0YneVjYHcONCmAUDbQdUpb0RvU3sygymw="
+        "hash": "sha256-UmwP+d71MR0YneVjYHcONCmAUDbQdUpb0RvU3sygymw="
     },
     "wordpress_6_5_4": {
         "version": "6.5.4",
-        "sha256": "sha256-HsgnmdN8MxN0F5v3BDFQzxvX2AgC/Ke0+Nz01Fkty7Q="
+        "hash": "sha256-HsgnmdN8MxN0F5v3BDFQzxvX2AgC/Ke0+Nz01Fkty7Q="
     },
     "wordpress_6_5_5": {
         "version": "6.5.5",
-        "sha256": "sha256-bIRmTqmzIRo1KdhAcJa1GxhVcTEiEaLFPzlNFbzfLcQ="
+        "hash": "sha256-bIRmTqmzIRo1KdhAcJa1GxhVcTEiEaLFPzlNFbzfLcQ="
     },
     "wordpress_6_5_6": {
         "version": "6.5.6",
-        "sha256": "sha256-bE4aCeQB09WOpWFnopRZd1wf1z3Z1Rfip2taoUu46pg="
+        "hash": "sha256-bE4aCeQB09WOpWFnopRZd1wf1z3Z1Rfip2taoUu46pg="
     },
     "wordpress_6_5_7": {
         "version": "6.5.7",
-        "sha256": "sha256-mPL4vwnQscUJuGZXdZOJZjqVrjrtJTDLFk3IYTZ38Pk="
+        "hash": "sha256-mPL4vwnQscUJuGZXdZOJZjqVrjrtJTDLFk3IYTZ38Pk="
     },
     "wordpress_6_6_0": {
         "version": "6.6",
-        "sha256": "sha256-pfg4R53RRvkXOnA2NRWz3DSi51LM9txUTeoLND7yWQk="
+        "hash": "sha256-pfg4R53RRvkXOnA2NRWz3DSi51LM9txUTeoLND7yWQk="
     },
     "wordpress_6_6_1": {
         "version": "6.6.1",
-        "sha256": "sha256-YW6BhlP48okxLrpsJwPgynSHpbdRqyMoXaq9IBd8TlU="
+        "hash": "sha256-YW6BhlP48okxLrpsJwPgynSHpbdRqyMoXaq9IBd8TlU="
     },
     "wordpress_6_6_2": {
         "version": "6.6.2",
-        "sha256": "sha256-JpemjLPc9IP0/OiASSVpjHRmQBs2n8Mt4nB6WcTCB9Y="
+        "hash": "sha256-JpemjLPc9IP0/OiASSVpjHRmQBs2n8Mt4nB6WcTCB9Y="
     },
     "wordpress_6_6_3": {
         "version": "6.6.3",
-        "sha256": "sha256-nsm/osnMCKc+NhRVvxTJmyGpTp2PU21YYX3d8HHOD3c="
+        "hash": "sha256-nsm/osnMCKc+NhRVvxTJmyGpTp2PU21YYX3d8HHOD3c="
     },
     "wordpress_6_6_4": {
         "version": "6.6.4",
-        "sha256": "sha256-/E60CprbRRa7P1t4ZHcRfIxpgeSnHrAGlior/6Etayc="
+        "hash": "sha256-/E60CprbRRa7P1t4ZHcRfIxpgeSnHrAGlior/6Etayc="
     },
     "wordpress_6_7_0": {
         "version": "6.7",
-        "sha256": "sha256-UDcayx3Leen0HHPcORZ+5cmvfod4BLOWB1HKd6j5rqM="
+        "hash": "sha256-UDcayx3Leen0HHPcORZ+5cmvfod4BLOWB1HKd6j5rqM="
     },
     "wordpress_6_7_1": {
         "version": "6.7.1",
-        "sha256": "sha256-M1Kc1jjIRQB+jg0myR1gycFrgiyEnI3urQPQyFGibes="
+        "hash": "sha256-M1Kc1jjIRQB+jg0myR1gycFrgiyEnI3urQPQyFGibes="
     },
     "wordpress_6_7_2": {
         "version": "6.7.2",
-        "sha256": "sha256-z9nIPPqd2gNRiY6ptz9YmVyBeZSlQkvhh3f4PohqPPY="
+        "hash": "sha256-z9nIPPqd2gNRiY6ptz9YmVyBeZSlQkvhh3f4PohqPPY="
     },
     "wordpress_6_7_3": {
         "version": "6.7.3",
-        "sha256": "sha256-zWLpZ/NKla1u4CHh2Bu0P7UmFWvnuTUheRq6Bq5NZjU="
+        "hash": "sha256-zWLpZ/NKla1u4CHh2Bu0P7UmFWvnuTUheRq6Bq5NZjU="
     },
     "wordpress_6_7_4": {
         "version": "6.7.4",
-        "sha256": "sha256-QvHovW5Z91zORnhv9edngOD6GhiuBF+13v3ep6MDWrM="
+        "hash": "sha256-QvHovW5Z91zORnhv9edngOD6GhiuBF+13v3ep6MDWrM="
     },
     "wordpress_6_8_0": {
         "version": "6.8",
-        "sha256": "sha256-99vtxCPds/Lz6Y6RQPFyC/1tSo9Ic8hdouYvageN4Qo="
+        "hash": "sha256-99vtxCPds/Lz6Y6RQPFyC/1tSo9Ic8hdouYvageN4Qo="
     },
     "wordpress_6_8_1": {
         "version": "6.8.1",
-        "sha256": "sha256-PGVNB5vELE6C/yCmlIxFYpPhBLZ2L/fJ/JSAcbMxAyg="
+        "hash": "sha256-PGVNB5vELE6C/yCmlIxFYpPhBLZ2L/fJ/JSAcbMxAyg="
     },
     "wordpress_6_8_2": {
         "version": "6.8.2",
-        "sha256": "sha256-2Fpy45K/6GaBazwuvGpEaZByqlDMOmIPHE7S8TtkXis="
+        "hash": "sha256-2Fpy45K/6GaBazwuvGpEaZByqlDMOmIPHE7S8TtkXis="
     },
     "wordpress_6_8_3": {
         "version": "6.8.3",
-        "sha256": "sha256-kto0yZYOZNElhlLB73PFF/fkasbf0t/HVDbThVr0aww="
+        "hash": "sha256-kto0yZYOZNElhlLB73PFF/fkasbf0t/HVDbThVr0aww="
     },
     "wordpress_6_9_0": {
         "version": "6.9",
-        "sha256": "sha256-WzY5AjPjL+9oy19mQ1uzK91Q4LPfpXUKzrLePFmT1yA="
+        "hash": "sha256-WzY5AjPjL+9oy19mQ1uzK91Q4LPfpXUKzrLePFmT1yA="
     },
     "prerelease": {
         "version": "6.9-RC3",
-        "sha256": "sha256-FtTNFf1LE1EVrKRp9Wmaa6Y3W0hEZoz9ME5/8DiDcKQ="
+        "hash": "sha256-FtTNFf1LE1EVrKRp9Wmaa6Y3W0hEZoz9ME5/8DiDcKQ="
     }
 }
