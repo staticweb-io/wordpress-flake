@@ -43,7 +43,12 @@
         ) versions;
       in
       {
-        devShells.default = mkShell { buildInputs = [ omnix ]; };
+        devShells.default = mkShell {
+          buildInputs = [
+            jsonfmt
+            omnix
+          ];
+        };
         lib = ourLib;
         packages =
           versions
