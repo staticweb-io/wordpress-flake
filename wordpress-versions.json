@@ -1,126 +1,126 @@
 {
   "wordpress_6_4_0": {
     "version": "6.4",
-    "hash": "sha256-1yy+jedKjpPSRTCmgx4Zz05fXDNPmRUTJf2gMIcY8Tc="
+    "hash": "sha256-4xRAfTAGcbuNGRCbvaO6jhSI6fsYfGDHw1H3ke4scyg="
   },
   "wordpress_6_4_1": {
     "version": "6.4.1",
-    "hash": "sha256-NF3tvVNUYlKPvtvJZzM7djGflOUT4VUlm4AyHPFzfdw="
+    "hash": "sha256-jlOY2fkLQP+avxBYYxeBk7c6h59TSSoDZF17qoqxXyY="
   },
   "wordpress_6_4_2": {
     "version": "6.4.2",
-    "hash": "sha256-m4KJELf5zs3gwAQPmAhoPe2rhopZFsYN6OzAv6Wzo6c="
+    "hash": "sha256-qNVbo2RGrHEmqEjP9wZ4rQJujFGNbXilCmtCceQVSNU="
   },
   "wordpress_6_4_3": {
     "version": "6.4.3",
-    "hash": "sha256-PwjHHRlwhEH9q94bPq34NnQv3uhm1kOpjRAu0/ECaYY="
+    "hash": "sha256-SxFrwrePBm4WB+BQ0sS0980eg6owfribAL+Yc8RFM2E="
   },
   "wordpress_6_4_4": {
     "version": "6.4.4",
-    "hash": "sha256-aLOO/XgjI3d/+1BpHDT2pGR697oceghjzOId1MjC+wQ="
+    "hash": "sha256-Pbvw9z3nGqTuQIf9KJq7H7Xm/Jjs7pF+BFtgZ8oCzf0="
   },
   "wordpress_6_4_5": {
     "version": "6.4.5",
-    "hash": "sha256-T4fp7uYoc/eo+pCfzSmIY0AbyR2LcDLl6iJHY6kxxso="
+    "hash": "sha256-+CDee+ERbjPd4N5NFKaybtUbiaK2px0SYyzhxmmP35A="
   },
   "wordpress_6_4_6": {
     "version": "6.4.6",
-    "hash": "sha256-vUtofIev94qNAOmmG6zCGMdW7jVKhyU5J1Ki3zS/CAg="
+    "hash": "sha256-2aVlhkmd85wRiH78fybf+bBIGYE6iKigiBjuO7qclrY="
   },
   "wordpress_6_4_7": {
     "version": "6.4.7",
-    "hash": "sha256-Zs3ylcnzQbVN0QJklAbs5/FA/XDLnts/rCESpjIstBw="
+    "hash": "sha256-cm8OCM3SqcJlTwYhRBQiYzX4TBhE1Z1i/o9ANsEiJXY="
   },
   "wordpress_6_5_0": {
     "version": "6.5",
-    "hash": "sha256-NCRWKIrhSMC6itw2y/WJUd2LSRtnVWkmVO/b2nEJK58="
+    "hash": "sha256-FsL0gvEBxSDvFQoHjxnEcVO04FVp7KvD3vjd7N7aIPg="
   },
   "wordpress_6_5_2": {
     "version": "6.5.2",
-    "hash": "sha256-APBO7hO9iuDGOP/IvB0dLAwby0PU7LPFth4IUXNQe9I="
+    "hash": "sha256-jEkHTAZfZ0LsUvkuAoUhRjRd8Ic7WY4bS43IBuNgleU="
   },
   "wordpress_6_5_3": {
     "version": "6.5.3",
-    "hash": "sha256-UmwP+d71MR0YneVjYHcONCmAUDbQdUpb0RvU3sygymw="
+    "hash": "sha256-h05p1tK7e3LwXFVvys9b6segyKBKp418nKO9TEaUMeM="
   },
   "wordpress_6_5_4": {
     "version": "6.5.4",
-    "hash": "sha256-HsgnmdN8MxN0F5v3BDFQzxvX2AgC/Ke0+Nz01Fkty7Q="
+    "hash": "sha256-7Ffx6+DB9tbjlgT3HcQKmEbwWITp0bRfQqcpKls/aJs="
   },
   "wordpress_6_5_5": {
     "version": "6.5.5",
-    "hash": "sha256-bIRmTqmzIRo1KdhAcJa1GxhVcTEiEaLFPzlNFbzfLcQ="
+    "hash": "sha256-c3GHrYWg5lskNM+U7y+gWoo2hFuCGk8cQXVBOnE+4Sc="
   },
   "wordpress_6_5_6": {
     "version": "6.5.6",
-    "hash": "sha256-bE4aCeQB09WOpWFnopRZd1wf1z3Z1Rfip2taoUu46pg="
+    "hash": "sha256-X+SK8qtV4q1N0OnGdGDf7ju4LRZKANxDuAsRZMxURNE="
   },
   "wordpress_6_5_7": {
     "version": "6.5.7",
-    "hash": "sha256-mPL4vwnQscUJuGZXdZOJZjqVrjrtJTDLFk3IYTZ38Pk="
+    "hash": "sha256-s2IzuozxnYE9HGqJJvVGAWA6/x3PiUHVl4blm+ttvIo="
   },
   "wordpress_6_6_0": {
     "version": "6.6",
-    "hash": "sha256-pfg4R53RRvkXOnA2NRWz3DSi51LM9txUTeoLND7yWQk="
+    "hash": "sha256-+3A1/bhCgFL5U8qotnd/mA65TSCw5oQOWVDLGPHa+r0="
   },
   "wordpress_6_6_1": {
     "version": "6.6.1",
-    "hash": "sha256-YW6BhlP48okxLrpsJwPgynSHpbdRqyMoXaq9IBd8TlU="
+    "hash": "sha256-G/BSLCwGqwb8UZ22iSDIIfwegP/KCpuld2aNKh8kVAs="
   },
   "wordpress_6_6_2": {
     "version": "6.6.2",
-    "hash": "sha256-JpemjLPc9IP0/OiASSVpjHRmQBs2n8Mt4nB6WcTCB9Y="
+    "hash": "sha256-nMn3kXOKdH8GxtLhZawxTCloFTYLSGDweuXicrNNPTs="
   },
   "wordpress_6_6_3": {
     "version": "6.6.3",
-    "hash": "sha256-nsm/osnMCKc+NhRVvxTJmyGpTp2PU21YYX3d8HHOD3c="
+    "hash": "sha256-5rXI0PF9gM7NDv3bzcxpAwr8b2ayX5kMh1KQk7E8EAY="
   },
   "wordpress_6_6_4": {
     "version": "6.6.4",
-    "hash": "sha256-/E60CprbRRa7P1t4ZHcRfIxpgeSnHrAGlior/6Etayc="
+    "hash": "sha256-xySFAdO/80AdJ43EqMEhMM7omBOqbgPyM8D9rVaXcP8="
   },
   "wordpress_6_7_0": {
     "version": "6.7",
-    "hash": "sha256-UDcayx3Leen0HHPcORZ+5cmvfod4BLOWB1HKd6j5rqM="
+    "hash": "sha256-2RIWkMPGrdoLPTM2aDFz06wEXSUwd2bX/YQlCUEC9Sw="
   },
   "wordpress_6_7_1": {
     "version": "6.7.1",
-    "hash": "sha256-M1Kc1jjIRQB+jg0myR1gycFrgiyEnI3urQPQyFGibes="
+    "hash": "sha256-enk2lqaS/qa0ETrjKzCCXa97M6HeWRu5+OQTA9LbUZw="
   },
   "wordpress_6_7_2": {
     "version": "6.7.2",
-    "hash": "sha256-z9nIPPqd2gNRiY6ptz9YmVyBeZSlQkvhh3f4PohqPPY="
+    "hash": "sha256-7/mGFqZMc3+STCzxeNrfh+Qz8E6OFOtkzRe5uqUJtZ4="
   },
   "wordpress_6_7_3": {
     "version": "6.7.3",
-    "hash": "sha256-zWLpZ/NKla1u4CHh2Bu0P7UmFWvnuTUheRq6Bq5NZjU="
+    "hash": "sha256-gmstA5Sa1LnGw9WDgIaVibefvXJTNFIHZoZh++qAyMg="
   },
   "wordpress_6_7_4": {
     "version": "6.7.4",
-    "hash": "sha256-QvHovW5Z91zORnhv9edngOD6GhiuBF+13v3ep6MDWrM="
+    "hash": "sha256-+EAWTH0cBbYAtWGHvCtbZ4yUyhyNq012JBZc/Ve886M="
   },
   "wordpress_6_8_0": {
     "version": "6.8",
-    "hash": "sha256-99vtxCPds/Lz6Y6RQPFyC/1tSo9Ic8hdouYvageN4Qo="
+    "hash": "sha256-7keYZOtjY52dBSy7PJC3w5QoKy81FUXyqnZuAL1LvpM="
   },
   "wordpress_6_8_1": {
     "version": "6.8.1",
-    "hash": "sha256-PGVNB5vELE6C/yCmlIxFYpPhBLZ2L/fJ/JSAcbMxAyg="
+    "hash": "sha256-1H6f3rRGHEr21Qd0UCxspbP4VB41bbw2vbz//fLC0AQ="
   },
   "wordpress_6_8_2": {
     "version": "6.8.2",
-    "hash": "sha256-2Fpy45K/6GaBazwuvGpEaZByqlDMOmIPHE7S8TtkXis="
+    "hash": "sha256-dacGmb84nAjhqEErr0h+nEMaBhjW1p1w+We4Q3B/Vw8="
   },
   "wordpress_6_8_3": {
     "version": "6.8.3",
-    "hash": "sha256-kto0yZYOZNElhlLB73PFF/fkasbf0t/HVDbThVr0aww="
+    "hash": "sha256-EuS5rBuIUZLFsS6NiU6xtoh4O4cy4vQ1He6LykhNfwE="
   },
   "wordpress_6_9_0": {
     "version": "6.9",
-    "hash": "sha256-WzY5AjPjL+9oy19mQ1uzK91Q4LPfpXUKzrLePFmT1yA="
+    "hash": "sha256-i9yF6KIL5pMDayL5ch+/1qfFcPsFh/D6dzj1bKY29R4="
   },
   "prerelease": {
     "version": "6.9-RC3",
-    "hash": "sha256-FtTNFf1LE1EVrKRp9Wmaa6Y3W0hEZoz9ME5/8DiDcKQ="
+    "hash": "sha256-qOsAg7ROnwN5NlTeNnOxiJm6qkUwsuMOJ1agkTIdHmA="
   }
 }

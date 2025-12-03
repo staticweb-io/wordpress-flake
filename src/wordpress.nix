@@ -6,14 +6,14 @@
   version,
   hash,
   stdenv,
-  fetchurl,
+  fetchzip,
 }:
 
 stdenv.mkDerivation rec {
   pname = "wordpress";
   inherit version;
 
-  src = fetchurl {
+  src = fetchzip {
     url = "https://wordpress.org/${pname}-${version}.tar.gz";
     inherit hash;
   };

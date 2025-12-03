@@ -19,7 +19,7 @@ jq -r 'to_entries[] | select(.value.hash == "") | .key' "$JSON_FILE" | while rea
     echo "Fetching hash for $url..."
     
     # Fetch the hash using nix-prefetch-url and convert to SRI format
-    sha256_hash=$(nix-prefetch-url "$url" --type sha256 2>/dev/null)
+    sha256_hash=$(nix-prefetch-url "$url" --type sha256 --unpack 2>/dev/null)
     sri_hash=$(nix-hash --type sha256 --to-sri "$sha256_hash")
     
     echo "Hash: $sri_hash"

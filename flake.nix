@@ -32,7 +32,7 @@
         versions = lib.attrsets.mapAttrs (
           name: data:
           (import ./src/wordpress.nix {
-            inherit (pkgs) lib stdenv fetchurl;
+            inherit (pkgs) lib stdenv fetchzip;
             version = data.version;
             hash = data.hash;
           })
