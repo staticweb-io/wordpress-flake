@@ -115,6 +115,10 @@
         "version": "6.8.3",
         "sha256": "sha256-kto0yZYOZNElhlLB73PFF/fkasbf0t/HVDbThVr0aww="
     },
+    "wordpress_6_9_0": {
+        "version": "6.9",
+        "sha256": "sha256-WzY5AjPjL+9oy19mQ1uzK91Q4LPfpXUKzrLePFmT1yA="
+    },
     "prerelease": {
         "version": "6.9-RC3",
         "sha256": "sha256-FtTNFf1LE1EVrKRp9Wmaa6Y3W0hEZoz9ME5/8DiDcKQ="
