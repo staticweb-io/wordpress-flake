@@ -45,7 +45,9 @@
       {
         devShells.default = mkShell {
           buildInputs = [
+            jq
             jsonfmt
+            nix
             omnix
           ];
         };
