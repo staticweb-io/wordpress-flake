@@ -119,8 +119,12 @@
     "version": "6.9",
     "hash": "sha256-i9yF6KIL5pMDayL5ch+/1qfFcPsFh/D6dzj1bKY29R4="
   },
+  "wordpress_6_9_1": {
+    "version": "6.9.1",
+    "hash": "sha256-38kC1jWyDU4XC7xZHWtjXcmfqM60AaNpBA9AnYi6viQ="
+  },
   "prerelease": {
-    "version": "6.9-RC3",
-    "hash": "sha256-qOsAg7ROnwN5NlTeNnOxiJm6qkUwsuMOJ1agkTIdHmA="
+    "version": "6.9.1-RC1",
+    "hash": "sha256-1Yu67JKGfyGDRY0eklWxE/um4Yi9SGQAD2/5glsBcwg="
   }
 }
