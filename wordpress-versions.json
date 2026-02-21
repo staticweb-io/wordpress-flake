@@ -124,7 +124,7 @@
     "hash": "sha256-38kC1jWyDU4XC7xZHWtjXcmfqM60AaNpBA9AnYi6viQ="
   },
   "prerelease": {
-    "version": "6.9.1-RC1",
-    "hash": "sha256-1Yu67JKGfyGDRY0eklWxE/um4Yi9SGQAD2/5glsBcwg="
+    "version": "7.0-beta1",
+    "hash": "sha256-MrhIzz3T8wEu8IlGfGkEU4ymaLEoxWIv04uIFPH4UE4="
   }
 }
