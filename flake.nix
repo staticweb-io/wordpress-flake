@@ -58,7 +58,7 @@
               hash = data.hash;
             })
           ) (lib.importJSON (self + "/wordpress-versions.json"));
-          latest = versions.wordpress_6_9_2;
+          latest = versions.wordpress_6_9_4;
           updaters = lib.attrsets.mapAttrs' (
             name: wordpress-source: lib.attrsets.nameValuePair ("update-" + name) (mkWPUpdater wordpress-source)
           ) versions;

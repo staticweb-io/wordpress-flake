@@ -131,6 +131,10 @@
     "version": "6.9.3",
     "hash": "sha256-BLegBgL0BxnJGuwanVnC1IDYSworAGH4EWWEfaM2+vQ="
   },
+  "wordpress_6_9_4": {
+    "version": "6.9.4",
+    "hash": "sha256-DqXEN2jT51JkGSCdHLFRvlmJRCjXqwxx7YFAxfSNlUQ="
+  },
   "prerelease": {
     "version": "7.0-beta4",
     "hash": "sha256-mkNfsMCJ0yPl2abvPHx+aLRaB2NFwEP2rExJqQs+Rc4="
