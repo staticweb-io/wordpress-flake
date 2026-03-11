@@ -127,8 +127,12 @@
     "version": "6.9.2",
     "hash": "sha256-1W5p7rm9W5FLFfGaIxcH8m9t4O5EV6uDXs03127ztok="
   },
+  "wordpress_6_9_3": {
+    "version": "6.9.3",
+    "hash": "sha256-BLegBgL0BxnJGuwanVnC1IDYSworAGH4EWWEfaM2+vQ="
+  },
   "prerelease": {
-    "version": "7.0-beta3",
-    "hash": "sha256-uSwCh7HMjmzqJf7QWsSQFF6F2uhHGNGoH/z36MhUMus="
+    "version": "7.0-beta4",
+    "hash": "sha256-mkNfsMCJ0yPl2abvPHx+aLRaB2NFwEP2rExJqQs+Rc4="
   }
 }
