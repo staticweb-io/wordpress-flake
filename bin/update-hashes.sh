@@ -4,13 +4,13 @@ set -euo pipefail
 JSON_FILE="wordpress-versions.json"
 TEMP_FILE=$(mktemp)
 
-echo "Checking for entries with blank hashes in $JSON_FILE..."
+echo "Checking for entries with missing hashes in $JSON_FILE..."
 
 # Read the JSON file
 cp "$JSON_FILE" "$TEMP_FILE"
 
-# Get all keys and check for blank hashes
-jq -r 'to_entries[] | select(.value.hash == "") | .key' "$JSON_FILE" | while read -r key; do
+# Get all keys and check for missing or blank hashes
+jq -r 'to_entries[] | select(.value.hash == "" or .value.hash == null) | select(.value.version != null) | .key' "$JSON_FILE" | while read -r key; do
     version=$(jq -r ".[\"$key\"].version" "$JSON_FILE")
     echo "Found blank hash for $key (version $version)"
     
@@ -37,4 +37,4 @@ jsonfmt -w "$TEMP_FILE"
 # Move the updated file back
 mv "$TEMP_FILE" "$JSON_FILE"
 
-echo "Done! All blank hashes have been updated."
+echo "Done! All missing hashes have been updated."
