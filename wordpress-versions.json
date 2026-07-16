@@ -140,7 +140,7 @@
     "hash": "sha256-+tZatYDKf1UFGctahger31ib5V7KOgyQYf2qI90XQlw="
   },
   "prerelease": {
-    "version": "7.0.1-RC1",
-    "hash": "sha256-SLMp/l1PIhgz/RHHD9+SvPAyRt9DVBEsJSOH75A0yZI="
+    "version": "7.1-beta1",
+    "hash": "sha256-azpMEspyzT73ftJQTJtsEHLtG+hR7wE2GVzVGVrKT8I="
   }
 }
