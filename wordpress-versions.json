@@ -115,6 +115,18 @@
     "version": "6.8.3",
     "hash": "sha256-EuS5rBuIUZLFsS6NiU6xtoh4O4cy4vQ1He6LykhNfwE="
   },
+  "wordpress_6_8_4": {
+    "version": "6.8.4",
+    "hash": "sha256-uwZ4EJKvtH0inrn+a4QGlqEYoBF3dy+Iso1uOQzav2c="
+  },
+  "wordpress_6_8_5": {
+    "version": "6.8.5",
+    "hash": "sha256-vNv14mu3OPh06DRpcQV//Y0S/aE9tXKYj5awaowyVk0="
+  },
+  "wordpress_6_8_6": {
+    "version": "6.8.6",
+    "hash": "sha256-pFJbOiyfDhywrbeBff+NiWxRHrnpRl95SGaVgtzm+fA="
+  },
   "wordpress_6_9_0": {
     "version": "6.9",
     "hash": "sha256-i9yF6KIL5pMDayL5ch+/1qfFcPsFh/D6dzj1bKY29R4="
@@ -135,12 +147,24 @@
     "version": "6.9.4",
     "hash": "sha256-DqXEN2jT51JkGSCdHLFRvlmJRCjXqwxx7YFAxfSNlUQ="
   },
+  "wordpress_6_9_5": {
+    "version": "6.9.5",
+    "hash": "sha256-yc0r28BqeiwYfkh0s1xWtwpm+lFSYc15V5NdX+vTSqk="
+  },
   "wordpress_7_0_0": {
     "version": "7.0",
     "hash": "sha256-+tZatYDKf1UFGctahger31ib5V7KOgyQYf2qI90XQlw="
   },
+  "wordpress_7_0_1": {
+    "version": "7.0.1",
+    "hash": "sha256-vkzmfQpcj/qYT26PXi+V2ji/F5tKJhk0zZJ9QkHwQoY="
+  },
+  "wordpress_7_0_2": {
+    "version": "7.0.2",
+    "hash": "sha256-FROQkpptUUugXaHGbH3cKCybOv1Q/F7gdlFc+E3yELk="
+  },
   "prerelease": {
-    "version": "7.1-beta1",
-    "hash": "sha256-azpMEspyzT73ftJQTJtsEHLtG+hR7wE2GVzVGVrKT8I="
+    "version": "7.1-beta2",
+    "hash": "sha256-TR/7DI1sjLvt3ZMG0Zj3va1K6h77Ih2h9qEOgFJcaHk="
   }
 }
