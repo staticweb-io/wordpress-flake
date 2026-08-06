@@ -179,8 +179,12 @@
     "version": "7.0.2",
     "hash": "sha256-FROQkpptUUugXaHGbH3cKCybOv1Q/F7gdlFc+E3yELk="
   },
+  "wordpress_7_0_3": {
+    "version": "7.0.3",
+    "hash": "sha256-e/TrarjL/pNaYQC6aYPFfVJlujFPwKxu0QogST+Y1kA="
+  },
   "prerelease": {
-    "version": "7.1-RC1",
-    "hash": "sha256-5n9vQanGwJ1PlvImG56auHiA9Az1PNkNc4z64t15uXU="
+    "version": "7.1-RC2",
+    "hash": "sha256-JyuSAG3mfwAZRsR84/ei0xV71j8e1bYbhBnQwYeUH0A="
   }
 }
