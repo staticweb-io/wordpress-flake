@@ -30,8 +30,6 @@
             buildInputs = [
               jq
               jsonfmt
-              nix
-              omnix
             ];
           };
       });
