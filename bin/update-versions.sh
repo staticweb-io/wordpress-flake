@@ -7,7 +7,7 @@ echo "Fetching released WordPress versions from wordpress.org..."
 STABLE_JSON=$(curl -sf "https://api.wordpress.org/core/stable-check/1.0/")
 
 # Lowest major.minor we track, derived from the existing file.
-MIN_BRANCH=$(jq -r '[.[] | select(.version != null) | .version | capture("^(?<mm>[0-9]+\\.[0-9]+)") | .mm] | min' "$JSON_FILE")
+MIN_BRANCH=$(jq -r '[.[] | objects | select(.version != null) | .version | capture("^(?<mm>[0-9]+\\.[0-9]+)") | .mm] | min' "$JSON_FILE")
 
 echo "$STABLE_JSON" | jq -r 'keys[]' | while read -r version; do
   # Only consider plain x.y or x.y.z releases (skip oddities like 1.5.1.1).
@@ -20,7 +20,7 @@ echo "$STABLE_JSON" | jq -r 'keys[]' | while read -r version; do
     continue
   fi
 
-  if jq -e --arg v "$version" 'any(.[]; .version == $v)' "$JSON_FILE" > /dev/null; then
+  if jq -e --arg v "$version" 'any(.[] | objects; .version == $v)' "$JSON_FILE" > /dev/null; then
     continue
   fi
 
@@ -35,12 +35,13 @@ echo "$STABLE_JSON" | jq -r 'keys[]' | while read -r version; do
   mv "${JSON_FILE}.new" "$JSON_FILE"
 done
 
-# Sort wordpress_* entries numerically by version, keeping "prerelease" last.
+# Sort wordpress_* entries numerically by version, point "latest" at the
+# newest one, and keep "latest" and "prerelease" last.
 jq '
-  (to_entries | map(select(.key != "prerelease"))
+  (to_entries | map(select(.key | startswith("wordpress_")))
     | sort_by(.value.version | split(".") | map(tonumber? // 0))) as $sorted
   | (to_entries | map(select(.key == "prerelease"))) as $pre
-  | ($sorted + $pre) | from_entries
+  | ($sorted + [{key: "latest", value: $sorted[-1].key}] + $pre) | from_entries
 ' "$JSON_FILE" > "${JSON_FILE}.new"
 mv "${JSON_FILE}.new" "$JSON_FILE"
 

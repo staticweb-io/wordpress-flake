@@ -303,6 +303,7 @@
     "version": "7.1.2",
     "hash": "sha256-9YiZVVjZi+VLolZWYJcA7PZNnpO7b14cjdZlMkKh88o="
   },
+  "latest": "wordpress_7_1_2",
   "prerelease": {
     "version": "7.1-RC3",
     "hash": "sha256-boEIPqw5ay1XvEBsXcAanhshS9qpY0qrYrkjO3bc7vI="

@@ -10,7 +10,7 @@ echo "Checking for entries with missing hashes in $JSON_FILE..."
 cp "$JSON_FILE" "$TEMP_FILE"
 
 # Get all keys and check for missing or blank hashes
-jq -r 'to_entries[] | select(.value.hash == "" or .value.hash == null) | select(.value.version != null) | .key' "$JSON_FILE" | while read -r key; do
+jq -r 'to_entries[] | select(.value | type == "object") | select(.value.hash == "" or .value.hash == null) | select(.value.version != null) | .key' "$JSON_FILE" | while read -r key; do
     version=$(jq -r ".[\"$key\"].version" "$JSON_FILE")
     echo "Found blank hash for $key (version $version)"
     

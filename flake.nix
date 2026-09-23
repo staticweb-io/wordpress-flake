@@ -48,6 +48,7 @@
                 wordpress-source
                 ;
             });
+          versionsJSON = lib.importJSON (self + "/wordpress-versions.json");
           versions = lib.attrsets.mapAttrs (
             name: data:
             (import ./src/wordpress.nix {
@@ -55,8 +56,8 @@
               version = data.version;
               hash = data.hash;
             })
-          ) (lib.importJSON (self + "/wordpress-versions.json"));
-          latest = versions.wordpress_7_1_2;
+          ) (removeAttrs versionsJSON [ "latest" ]);
+          latest = versions.${versionsJSON.latest};
           updaters = lib.attrsets.mapAttrs' (
             name: wordpress-source: lib.attrsets.nameValuePair ("update-" + name) (mkWPUpdater wordpress-source)
           ) versions;
