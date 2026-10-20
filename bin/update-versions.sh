@@ -35,6 +35,19 @@ echo "$STABLE_JSON" | jq -r 'keys[]' | while read -r version; do
   mv "${JSON_FILE}.new" "$JSON_FILE"
 done
 
+echo "Fetching the current WordPress beta or RC from wordpress.org..."
+# The beta channel offers the newest beta or RC as the "development" response.
+PRERELEASE=$(curl -sf "https://api.wordpress.org/core/version-check/1.7/?channel=beta" \
+  | jq -r '[.offers[] | select(.response == "development") | .version
+      | select(test("^[0-9]+(\\.[0-9]+)+-(beta|RC)[0-9]+$"))] | first // empty')
+
+if [ -n "$PRERELEASE" ] && [ "$(jq -r '.prerelease.version // ""' "$JSON_FILE")" != "$PRERELEASE" ]; then
+  echo "Setting prerelease to $PRERELEASE"
+  jq --arg version "$PRERELEASE" \
+    '.prerelease = {"version": $version, "hash": ""}' "$JSON_FILE" > "${JSON_FILE}.new"
+  mv "${JSON_FILE}.new" "$JSON_FILE"
+fi
+
 # Sort wordpress_* entries numerically by version, point "latest" at the
 # newest one, and keep "latest" and "prerelease" last.
 jq '
