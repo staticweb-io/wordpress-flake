@@ -369,7 +369,7 @@
   },
   "latest": "wordpress_7_1_4",
   "prerelease": {
-    "version": "7.2-beta4",
-    "hash": "sha256-nQBv/dyQ9KSCOjO9sXZjaHYxv9+vWGd+hyk3tkNa76o="
+    "version": "7.2-beta5",
+    "hash": "sha256-AF1ivT7sqyTkpvbw8mtqKaBeMvKUQG5weQ0VeiUuH2Q="
   }
 }
