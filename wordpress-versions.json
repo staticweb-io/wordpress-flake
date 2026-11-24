@@ -59,6 +59,10 @@
     "version": "6.4.14",
     "hash": "sha256-TClHO0pW/55nO6PDL0S/fO/Pr/ws/7kGcTOY84nfB5A="
   },
+  "wordpress_6_4_15": {
+    "version": "6.4.15",
+    "hash": "sha256-rtpCrPKMFFP7F0RopWVaPi9YXetI2K6iokGCFEYI8GY="
+  },
   "wordpress_6_5_0": {
     "version": "6.5",
     "hash": "sha256-FsL0gvEBxSDvFQoHjxnEcVO04FVp7KvD3vjd7N7aIPg="
@@ -397,7 +401,7 @@
   },
   "latest": "wordpress_7_1_5",
   "prerelease": {
-    "version": "7.2-RC2",
-    "hash": "sha256-QyD7k/BdXLtRASqu9LiUOlwL0vz+elsRrf4OfDlPYcQ="
+    "version": "7.2-RC3",
+    "hash": "sha256-ZtMPweBXiGwbpv67/Jg/lAWGiLzTPQQJwu2NHn6Vz5o="
   }
 }
